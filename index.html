@@ -34,6 +34,15 @@
                             
                     </li>
                 </ul>
+                <!-- add input todo -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9">  <input type="text" class="form-control" placeholder="inserisci la nuova todo" v-model="texttask"></div>
+                        <div class="col-3"><button class="btn btn-sm btn-success"  @click="addTodo">Add</button></div>
+                    </div>
+                  
+                    
+                </div>
               </div>
             </div>
         </div>
