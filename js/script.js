@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp ({
     data() {
         return{
+            // creo l'array con le cose da fare
             todolist:[
                 {
                     text: "Buttare la spazzatura",
@@ -29,6 +30,10 @@ createApp ({
         }
     },
     methods:{
+        // funzione per eliminare un oggetto del array
+        deleteTodo(index){
+            this.todolist.splice(index,1)
+        }
     }
 }).mount("#app")
 
