@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+.dimension_{
+    width: 700px;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+body{
+    background-color: darkkhaki;
+}
+
+li{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.done_{
+color: green;
+text-decoration: line-through;
+font-weight: bold;
+}

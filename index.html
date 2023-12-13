@@ -9,9 +9,22 @@
 </head>
 <body>
     <div id="app">
-        <ul v-for="(todo, index) in todolist">
-            <li v-text="todo.text"></li>
-        </ul>
+        <div class="container dimension_">
+            <div class="row">
+              <div class="col-12">
+                <ul >
+                    <li v-for="(todo, index) in todolist" 
+                        class="d-flex justify-content-between">
+                        
+                        <span :class="todo.done ? 'done_':''"> {{todo.text}}</span>
+                       
+                        <button class="btn btn-success btn-sm" 
+                                @click="todo.done=!todo.done" > Done </button>       
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </div>
     </div>   
  <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
  <script src="./js/script.js" type="text/javascript"></script>   
